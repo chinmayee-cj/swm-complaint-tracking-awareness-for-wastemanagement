@@ -8,9 +8,9 @@ A web application designed to promote awareness about **Solid Waste Management (
 
 - 🧠 **Awareness Hub**: Learn about smart cities, biochemical waste processing, and energy recovery.
 - 📝 **Complaint Registration**: Users can file complaints with image/file uploads.
-- 🧾 **Complaint History**: View submitted complaints and their status.
+- 🧾 **Complaint History**: View submitted complaints and their status .
 - 📷 **File Upload Support**: Attach images or documents as evidence.
-- 🔒 **User Authentication**: Secure login system to track your submissions.
+
 
 ---
 
