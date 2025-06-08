@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solid Waste Management Awareness</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Additional styles specific to index.html */
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .image-pair {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .image-pair:nth-child(even) {
+      flex-direction: row-reverse; /* Alternate image/text side */
+    }
+
+    .image-pair img {
+      width: 48%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .image-pair .text {
+      width: 48%;
+      font-size: 1.1rem;
+      color: #2f4f4f;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .image-pair {
+        flex-direction: column !important;
+      }
+
+      .image-pair img,
+      .image-pair .text {
+        width: 100%;
+      }
+
+      .image-pair img {
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Solid Waste Management Awareness</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="submit.html">Submit</a>
+      <a href="track.html">Track</a>
+      <a href="smartcities.html">Smart Cities</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="image-pair">
+      <img src="images/composting.jpg" alt="Composting Process" />
+      <div class="text">
+        <h2>Biochemical Composting</h2>
+        <p>Composting transforms organic waste into nutrient-rich soil through natural microbial decomposition.</p>
+      </div>
+    </section>
+
+    <section class="image-pair">
+      <img src="images/energy-recovery.jpg" alt="Energy Recovery" />
+      <div class="text">
+        <h2>Energy Recovery from Waste</h2>
+        <p>Waste-to-energy technologies help generate electricity and heat by processing non-recyclable waste.</p>
+      </div>
+    </section>
+
+    <section class="image-pair">
+      <img src="images/solid-waste-issues.jpg" alt="Solid Waste Issues" />
+      <div class="text">
+        <h2>Current Issues in SWM</h2>
+        <p>Challenges such as improper segregation and landfill overuse hinder efficient waste management in urban areas.</p>
+      </div>
+    </section>
+
+    <section class="image-pair">
+      <img src="images/smart-cities.jpg" alt="Smart Cities Waste Management" />
+      <div class="text">
+        <h2>Smart Cities Initiative</h2>
+        <p>Smart cities are implementing innovative waste management systems to improve sustainability and urban health.</p>
+      </div>
+    </section>
+
+    <section class="image-pair">
+      <img src="images/complaint-tracking.jpg" alt="Complaint Tracking" />
+      <div class="text">
+        <h2>Anonymous Complaint & Tracking</h2>
+        <p>Submit and track solid waste complaints easily, anonymously, and help keep your city clean and green.</p>
+      </div>
+    </section>
+
+    <section class="image-pair">
+      <img src="images/community-awareness.jpg" alt="Community Awareness" />
+      <div class="text">
+        <h2>Community Awareness</h2>
+        <p>Engage with your community to promote responsible waste disposal and environmental protection.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 SWM Awareness Platform
+  </footer>
+</body>
+</html>

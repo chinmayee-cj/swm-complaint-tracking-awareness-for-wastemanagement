@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header & Footer */
+header, footer {
+  background-color: #2f4f4f;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #556b6b;
+  outline: none;
+}
+
+/* Main Page Content */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  color: #2f4f4f;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #2f4f4f;
+}
+
+/* Inputs, Textareas, Select */
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #2f4f4f;
+  box-shadow: 0 0 5px rgba(47, 79, 79, 0.5);
+  outline: none;
+  background: #fefefe;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button */
+button,
+.btn-submit {
+  display: inline-block;
+  background-color: #2f4f4f;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  user-select: none;
+}
+
+button:hover,
+button:focus,
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: #1e3535;
+  outline: none;
+}
+
+/* Image Preview */
+#imagePreviewContainer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#imagePreview {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(47, 79, 79, 0.25);
+  object-fit: contain;
+}
+
+/* Feedback messages */
+.message {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}
+
+.error {
+  margin-top: 15px;
+  color: red;
+  font-weight: bold;
+}
+
+/* Small helper text */
+small {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #555;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Submit Complaint - SWM Awareness</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Submit a Complaint</h1>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="submit.html" aria-current="page">Submit</a>
+      <a href="track.html">Track</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="complaintForm" enctype="multipart/form-data" novalidate>
+      <div class="form-group">
+        <label for="description">Description <span aria-hidden="true">*</span></label>
+        <textarea
+          name="description"
+          id="description"
+          required
+          placeholder="Describe the issue in detail..."
+          rows="4"
+          aria-required="true"
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="location">Location <span aria-hidden="true">*</span></label>
+        <input
+          type="text"
+          name="location"
+          id="location"
+          required
+          placeholder="Enter the location of the issue"
+          aria-required="true"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category <span aria-hidden="true">*</span></label>
+        <select name="category" id="category" required aria-required="true">
+          <option value="" disabled selected>-- Select Category --</option>
+          <option value="Composting">Composting</option>
+          <option value="Energy Recovery">Energy Recovery</option>
+          <option value="Waste Collection">Waste Collection</option>
+          <option value="Illegal Dumping">Illegal Dumping</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="image">Upload Image (optional)</label>
+        <input
+          type="file"
+          name="image"
+          id="image"
+          accept="image/*"
+          aria-describedby="imageHelp"
+        />
+        <small id="imageHelp">Upload a photo to help us understand the issue better.</small>
+      </div>
+
+      <div id="imagePreviewContainer" aria-live="polite" aria-atomic="true">
+        <img
+          id="imagePreview"
+          src="#"
+          alt="Image Preview"
+          style="display: none; max-width: 300px; margin-top: 10px;"
+        />
+      </div>
+
+      <button type="submit" class="btn-submit">Submit Complaint</button>
+    </form>
+
+    <div id="submitMessage" role="alert" aria-live="assertive" style="margin-top: 1em;"></div>
+    </main>
+
+    <footer>
+      &copy; 2025 SWM Awareness
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
